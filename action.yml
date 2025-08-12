@@ -1,0 +1,20 @@
+name: "Compliance Check"
+description: "Run policy-as-code checks (OPA/Conftest) inside a container."
+author: "gusvega"
+branding:
+  icon: "check-square"
+  color: "purple"
+
+inputs:
+  workdir:
+    description: "Working directory"
+    required: false
+    default: "."
+  policy_path:
+    description: "Path to policies"
+    required: false
+    default: "policy"
+
+runs:
+  using: "docker"
+  image: "Dockerfile"

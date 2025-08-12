@@ -1,0 +1,11 @@
+{
+  "name": "tf-compliance-check",
+  "version": "0.1.0",
+  "description": "GitHub Action to run conftest",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.10.0",
+    "@actions/exec": "^1.1.1"
+  }
+}
